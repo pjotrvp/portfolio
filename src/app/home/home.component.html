@@ -28,7 +28,23 @@
     <div class="col-lg shadown border m-1">
       <div class="text-center">
         <h2>Featured project</h2>
+        <h4>{{ featuredProject.name }}</h4>
       </div>
+
+      @if (featuredProject.pictures) {
+      <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let picture of featuredProject.pictures">
+          <img
+            [src]="picture"
+            alt="placeholder"
+            style="display: block; width: 100%"
+          />
+        </ng-template>
+      </ngb-carousel>
+      }
+
+      <p class="mt-2">{{ featuredProject.summary }}</p>
+      <p>Visit the portfolio page to learn more!</p>
     </div>
   </div>
 </div>

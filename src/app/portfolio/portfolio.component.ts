@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../_models/project';
 import { Tag } from '../_models/Tag';
 import { CommonModule, NgFor } from '@angular/common';
+import { ProjectsService } from '../_services/projects.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,21 +13,16 @@ import { CommonModule, NgFor } from '@angular/common';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
 })
-export class PortfolioComponent {
-  projects: Project[] = [
-    {
-      id: 0,
-      name: 'My personal website',
-      summary: 'A website to showcase what i have worked on and my resume',
-      description:
-        'This website is built to show people what i have worked on so that they know my experience and so they can contact me.',
-      projectLink: 'https://github.com/pjotrvp/portfolio',
-      pictures: [],
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
-    },
-  ];
+export class PortfolioComponent implements OnInit {
+  projects = {} as Project[];
 
-  constructor(private titleService: Title) {
+  constructor(
+    private titleService: Title,
+    private projectService: ProjectsService
+  ) {
     this.titleService.setTitle('Pjotr van Pruissen - Portfolio');
+  }
+  ngOnInit(): void {
+    this.projects = this.projectService.GetProjects();
   }
 }

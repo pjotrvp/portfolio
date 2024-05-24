@@ -34,11 +34,7 @@
       @if (featuredProject.pictures) {
       <ngb-carousel>
         <ng-template ngbSlide *ngFor="let picture of featuredProject.pictures">
-          <img
-            [src]="picture"
-            alt="placeholder"
-            style="display: block; width: 100%"
-          />
+          <img [src]="picture" alt="placeholder" class="carousel-img" />
         </ng-template>
       </ngb-carousel>
       }

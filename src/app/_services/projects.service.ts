@@ -35,6 +35,19 @@ export class ProjectsService {
       ],
       tags: [Tag.CSHARP, Tag.UNITY],
     },
+    {
+      id: 2,
+      name: 'Avans devops',
+      summary:
+        'A Java application that mimmicks a devops system to learn working with design patterns.',
+      description:
+        'This application has been developed with a partner and was all about learning different design patterns. Code quality and testability was also a very important part of this application, this code is up to standard with SonarCloud quality gate: "Sonar way".',
+      projectLink: 'https://github.com/pjotrvp/AvansDevOps',
+      pictures: [
+        '../../assets/avansDevops/AvansDevOps_Class_Diagram-Arranged.png',
+      ],
+      tags: [Tag.JAVA],
+    },
   ];
 
   constructor() {}

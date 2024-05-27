@@ -11,12 +11,13 @@
   </div>
   <div class="body">
     @if (project.pictures) {
-    <ngb-carousel>
+    <ngb-carousel #carousel>
       <ng-template ngbSlide *ngFor="let picture of project.pictures">
         <img
           [src]="picture"
           alt="placeholder" class="carousel-img"
           style="display: block; width: 100%"
+          (load)="onImageLoad($event)"
         />
       </ng-template>
     </ngb-carousel>

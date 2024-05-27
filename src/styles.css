@@ -16,7 +16,7 @@
 
 body {
   background-color: #018281;
-  font-family: "SansSerif";
+  font-family: "DefFont";
 }
 
 .card {
@@ -29,8 +29,8 @@ body {
 }
 
 @font-face {
-  font-family: SansSerif;
-  src: url(./assets/fonts/refsan.ttf) format("truetype");
+  font-family: DefFont;
+  src: url(./assets/fonts/WINDOWSREGULAR.TTF) format("truetype");
 }
 
 .btn {

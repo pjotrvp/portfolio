@@ -13,3 +13,33 @@
   background-color: blue;
   color: white;
 }
+
+body {
+  background-color: #018281;
+  font-family: "MS Sans Serif";
+}
+
+.card {
+  outline: 1px solid #000000;
+  background: #c0c0c0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  border-radius: 0px;
+}
+
+.btn {
+  font-size: 12px;
+  outline: 1px solid #000000;
+  background: #c0c0c0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  border-radius: 0px;
+  color: #000000;
+  padding: 10px 10px;
+  margin: 20px 3px;
+  /* display: block;
+  position: relative; */
+  bottom: 0px;
+}

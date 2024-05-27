@@ -10,7 +10,7 @@ export class ProjectsService {
     {
       id: 0,
       name: 'My personal website',
-      summary: 'A website to showcase what i have worked on and my resume',
+      summary: 'A website to showcase my resume and my portfolio.',
       description:
         'This website is built to show people what i have worked on so that they know my experience and so they can contact me.',
       projectLink: 'https://github.com/pjotrvp/portfolio',
@@ -24,9 +24,9 @@ export class ProjectsService {
     {
       id: 1,
       name: 'Warehouse game',
-      summary: 'A 3D game that helps warehouse staff learn dutch',
+      summary: 'A 3D game that helps warehouse staff learn dutch.',
       description:
-        'This game is built in Unity, helps warehouse staff learn dutch. The development of this game was a group project and has teached me a lot about working in a team. It has also developed my skills in C# as well as working with a game engine',
+        'This game is built in Unity, helps warehouse staff learn dutch. The development of this game was a group project and has teached me a lot about working in a team. It has also developed my skills in C# as well as working with a game engine.',
       projectLink: 'https://github.com/ambushcat/warehouse',
       pictures: [
         '../../assets/warehouseGame/warehouse1.png',

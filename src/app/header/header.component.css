@@ -1,4 +1,8 @@
 .jumbotron {
-    padding: 2rem 1rem;
-    background-color: #e9ecef;
+  padding: 2rem 1rem;
+  background: #000080;
+  color: #fff;
+  border-width: 1px;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  border-style: solid;
 }

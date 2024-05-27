@@ -16,7 +16,7 @@
 
 body {
   background-color: #018281;
-  font-family: "MS Sans Serif";
+  font-family: "SansSerif";
 }
 
 .card {
@@ -26,6 +26,11 @@ body {
   border-style: solid;
   border-color: #ffffff #808080 #808080 #ffffff;
   border-radius: 0px;
+}
+
+@font-face {
+  font-family: SansSerif;
+  src: url(./assets/fonts/refsan.ttf) format("truetype");
 }
 
 .btn {
@@ -42,4 +47,5 @@ body {
   /* display: block;
   position: relative; */
   bottom: 0px;
+  transition: unset;
 }

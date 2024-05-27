@@ -47,6 +47,7 @@ p.title {
   text-align: center;
   cursor: pointer; /* Ensure the cursor indicates it's clickable */
   outline: none; /* Remove default focus outline */
+  transition: unset;
 }
 
 .title button:focus {

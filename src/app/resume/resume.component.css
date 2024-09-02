@@ -1,4 +1,14 @@
 .card {
-    /* max-width: 60%; */
-    margin: auto;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
 }

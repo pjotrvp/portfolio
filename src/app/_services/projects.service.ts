@@ -48,6 +48,34 @@ export class ProjectsService {
       ],
       tags: [Tag.JAVA],
     },
+    {
+      id: 3,
+      name: 'Risk analysis',
+      summary:
+        'Using the MAPGOOD method to analyze the risks of a specific case.',
+      description:
+        'For this project, i worked together with a team to analyse the many different risks that come into play for a organisation, we made a risk register and matched risks to measures to mitigate these risks. By completing this project, we learned a lot about cybersecurity but also learned about how this is implemented in a organisation.',
+      tags: [Tag.CYBERSECURITY],
+    },
+    {
+      id: 4,
+      name: 'Business Continuity Plan',
+      summary:
+        'Creating a business continuity plan to keep a company in business after a crisis.',
+      description: `This project was about creating a business continuity plan. This is very usefull in a cybersecurity context, because your organisation will know what to do when, for example, a ransomware attack happens.
+       This project has learned me a lot about how to keep a company in business after a crisis.
+        The plan contains the following parts: Risk management, threats, scenarios, mitigations, recovery plan, communication plan, testing and maintenance.`,
+      tags: [Tag.CYBERSECURITY],
+    },
+    {
+      id: 5,
+      name: 'Tabletop exercise',
+      summary:
+        'A tabletop exercise to test the business continuity plan of a company.',
+      description:`The tabletop exercise is an expansion upon the business continuity plan. This exercise is a simulation of a crisis, in this case a ransomware attack. The goal of this exercise is to test the business continuity plan and to see if it is up to date and if it works.
+       This exercise has learned me a lot about how to test a business continuity plan and how to improve it in future iterations. In this tabletop exercise, my role was the Security & privacy officer, which meant that i was responsible for privacy inquiries.`,
+      tags: [Tag.CYBERSECURITY],
+    }
   ];
 
   constructor() {}

@@ -8,6 +8,7 @@ export class Tag {
   static readonly ASPNET = new Tag('ASP.NET', 'green');
   static readonly JAVASCRIPT = new Tag('JavaScript', 'yellow');
   static readonly UNITY = new Tag('Unity', 'grey');
+  static readonly CYBERSECURITY = new Tag('Cybersecurity', '#317D35');
 
   private constructor(
     private readonly key: string,

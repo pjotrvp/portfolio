@@ -15,7 +15,8 @@
       <ng-template ngbSlide *ngFor="let picture of project.pictures">
         <img
           [src]="picture"
-          alt="placeholder" class="carousel-img"
+          alt="placeholder"
+          class="carousel-img"
           style="display: block; width: 100%"
           (load)="onImageLoad($event)"
         />
@@ -25,7 +26,7 @@
 
     <h3 class="mt-2">Description</h3>
     <p class="">{{ project.description }}</p>
-    <p>
+    <p *ngIf="project.projectLink">
       You can find this project on Github
       <a href="{{ project.projectLink }}" target="_blank">here</a>
     </p>

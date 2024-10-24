@@ -33,7 +33,7 @@ export class ProjectModalComponent implements OnInit {
     }
 
     this.loadedImagesCount++;
-    if (this.loadedImagesCount === this.project.pictures.length) {
+    if (this.project.pictures && this.loadedImagesCount === this.project.pictures.length) {
       this.setCarouselHeight();
     }
   }
